@@ -1,0 +1,14 @@
+$mainBlue: #2f5572;
+body {
+  color: $mainBlue;
+  font-family: 'Franklin Gothic Medium' sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.box {
+  a {
+    display: block;
+    text-decoration: none;
+  }
+}

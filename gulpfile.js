@@ -2,8 +2,9 @@ var gulp = require('gulp'),
 watch = require('gulp-watch'),
 postcss = require('gulp-postcss'),
 autoPrefix = require('autoprefixer'),
-cssVars = require('postcss-simple-vars')
-nested = require('postcss-nested');
+cssVars = require('postcss-simple-vars'),
+nested = require('postcss-nested'),
+cssImport = require('postcss-import');
 
 gulp.task('default', logOut);
 gulp.task('html', updateHTML);
@@ -20,7 +21,7 @@ function updateHTML() {
 
 function updateCSS() {
   return gulp.src('./app/assets/styles/styles.css')
-    .pipe(postcss([autoPrefix, cssVars, nested]))
+    .pipe(postcss([autoPrefix, cssVars, nested, cssImport]))
     .pipe(gulp.dest('./app/temp/styles'));
 }
 

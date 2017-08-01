@@ -1,0 +1,11 @@
+body {
+  color: #333;
+  font-family: 'Franklin Gothic Medium', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
